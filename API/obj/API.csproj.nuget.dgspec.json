@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj": {}
+    "C:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj": {
+    "C:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj",
+        "projectPath": "C:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\memo_\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\obj\\",
+        "outputPath": "C:\\Users\\memo_\\Desktop\\DEMO\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\memo_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

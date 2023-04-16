@@ -4,6 +4,7 @@
 
 
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <ng-container *ngIf="accountService. currentUser$|async">
             <li class="nav-item">
                 <a class="nav-link " routerLink="/members" routerLinkActive="active">Matches</a>
             </li>
@@ -13,6 +14,7 @@
             <li class="nav-item">
                 <a class="nav-link" routerLink="/messages" routerLinkActive="active">Messages</a>
             </li>
+        </ng-container>
         </ul>
 
         <div class="dropdown" *ngIf="accountService. currentUser$|async" dropdown>

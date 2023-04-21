@@ -19,8 +19,6 @@ namespace API.Controllers
 
         }
 
-        [AllowAnonymous]
-
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUser()
         {

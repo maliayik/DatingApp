@@ -14,3 +14,8 @@
     background-color: #fff;
     border-top: none;
 }
+
+.ngx-gallery {
+    display: inline-block;
+    margin-bottom: 20px;
+}

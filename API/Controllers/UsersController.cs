@@ -104,13 +104,13 @@ namespace API.Controllers
 
             if (photo == null) return NotFound();
 
-            if(photo.IsMain) return BadRequest("this is already your main photo");
+            if (photo.IsMain) return BadRequest("this is already your main photo");
 
-            var currentMain = user.Photos.FirstOrDefault(x=> x.IsMain);
-            if(currentMain != null) currentMain.IsMain=false;
-            photo.IsMain=true;
+            var currentMain = user.Photos.FirstOrDefault(x => x.IsMain);
+            if (currentMain != null) currentMain.IsMain = false;
+            photo.IsMain = true;
 
-            if(await _userRepository.SaveAllAsync()) return NoContent();
+            if (await _userRepository.SaveAllAsync()) return NoContent();
 
             return BadRequest("Problem settting the main photo");
         }

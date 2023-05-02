@@ -12,47 +12,52 @@ export class RegisterComponent implements OnInit {
 
   @Output() cancelRegister = new EventEmitter();
   model: any = {}
-  registerForm: FormGroup =new FormGroup ({});
+  registerForm: FormGroup = new FormGroup({});
 
-  constructor(private accountService: AccountService,private toastr:ToastrService,
-    private fb:FormBuilder) { }
+  constructor(private accountService: AccountService, private toastr: ToastrService,
+    private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.initializeForm();
   }
 
-  initializeForm(){
-    this.registerForm=this.fb.group({
-      username:['',Validators.required],
-      password:['',[Validators.required,Validators.minLength(4),Validators.maxLength(8)]],
-      confirmPassword:['',[Validators.required,this.matchValues('password')]],
+  initializeForm() {
+    this.registerForm = this.fb.group({
+      username: ['', Validators.required],
+      gender: ['male'],
+      knownAs: ['', Validators.required],
+      dateOfBirth: ['', Validators.required],
+      city: ['', Validators.required],
+      country: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(8)]],
+      confirmPassword: ['', [Validators.required, this.matchValues('password')]],
     });
     this.registerForm.controls['password'].valueChanges.subscribe({
       next: () => this.registerForm.controls['confirmPassword'].updateValueAndValidity()
     })
   }
 
-  matchValues(matchTo:string):ValidatorFn{   //this form control to confirmpassword
-    return(control:AbstractControl) => {
-      return control.value === control.parent?.get(matchTo)?.value ? null:{notMatching:true}
+  matchValues(matchTo: string): ValidatorFn {   //this form control to confirmpassword
+    return (control: AbstractControl) => {
+      return control.value === control.parent?.get(matchTo)?.value ? null : { notMatching: true }
     }
   }
 
   register() {
     console.log(this.registerForm?.value);
-    
 
-  //   this.accountService.register(this.model).subscribe({
-  //     next: () => {        
-  //       this.cancel();
-  //     },
-  //     error: error => {
-  //       this.toastr.error(error.error),
-  //       console.log(error);
-        
-  //     }
-  //   })
-   }
+
+    //   this.accountService.register(this.model).subscribe({
+    //     next: () => {        
+    //       this.cancel();
+    //     },
+    //     error: error => {
+    //       this.toastr.error(error.error),
+    //       console.log(error);
+
+    //     }
+    //   })
+  }
 
   cancel() {
     this.cancelRegister.emit(false)

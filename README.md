@@ -13,7 +13,8 @@ Uygulamanın içerisinde özellikler olarak;
 <br>
 Ayrıca Kullanıcılar profillerinde kendilerini tanıtabilicekleri alanlar ve kendi fotograflarını ekleyebilecekleri özellik bulunmakta.
 
-<br>
+
+
 
 -DatingApp'ı çalıştırmak için terminale npm isntall yazmanız ve yoksa EntityFramework Core kütüphanesini indirmeniz yeterli.
 

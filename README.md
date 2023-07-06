@@ -1,5 +1,5 @@
 # DatingApp
-<br>
+
 Bu projemde .NetCore ve Angular kullanarak sıfırdan date uygulaması inşa ettim.
 
 
@@ -10,12 +10,12 @@ Uygulamanın içerisinde özellikler olarak;
 - Kullanıcıların birbirine mesaj gönderebilmesi,
 - Kullanıcıların birbirlerini beğenebilmesi gibi özellikler bulunuyor.
 
-<br>
+
 Ayrıca Kullanıcılar profillerinde kendilerini tanıtabilicekleri alanlar ve kendi fotograflarını ekleyebilecekleri özellik bulunmakta.
 
 
 
 
--DatingApp'ı çalıştırmak için terminale npm isntall yazmanız ve yoksa EntityFramework Core kütüphanesini indirmeniz yeterli.
+- DatingApp'ı çalıştırmak için terminale npm isntall yazmanız ve yoksa EntityFramework Core kütüphanesini indirmeniz yeterli.
 
 

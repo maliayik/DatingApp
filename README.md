@@ -1,6 +1,6 @@
 # DatingApp
 
-Bu projemde .NetCore ve Angular kullanarak sıfırdan date uygulaması inşa ettim.
+Bu projemde .NetCore 7 , Angular 15 ve Bootstrap 5 sürümlerini kullanarak sıfırdan date uygulaması inşa ettim.
 
 
 Uygulamanın içerisinde özellikler olarak;

@@ -16,6 +16,6 @@ Ayrıca Kullanıcılar profillerinde kendilerini tanıtabilicekleri alanlar ve k
 
 
 
-- DatingApp'ı çalıştırmak için terminale npm isntall yazmanız ve yoksa EntityFramework Core kütüphanesini indirmeniz yeterli.
+- DatingApp'ı çalıştırmak için terminale npm install yazmanız ve yoksa EntityFramework Core kütüphanesini indirmeniz yeterli.
 
 
